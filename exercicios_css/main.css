@@ -1,0 +1,125 @@
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0; 
+
+}
+header li{ 
+    display: inline; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+}
+
+header li a{ 
+    color: #f5f6fa;
+    text-decoration: none; 
+    margin-left: 16px;
+    }
+
+header .container{ 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > header{ 
+    background-color: #2f3640;
+    padding: 16px 0; 
+    color: #f5f6fa; 
+}
+
+.container,
+footer { 
+    width: 1366px; 
+    margin: 0 auto; 
+}
+.artigos{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    
+} 
+
+.artigos article img{ 
+    width: 100%; 
+    border-radius: 8px; /*Deixar as bordas das imagens arredondadas*/
+}
+
+.artigos article{
+    width: 30%; 
+    
+}
+
+.artigos article p, 
+.artigos article a{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2,
+.artigos article{
+    margin-bottom: 18px;
+}
+
+.artigos article h3{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.artigos article a{ 
+    background-color: rgb(15, 15, 175); /*aqui definimos a cor de fundo do link. cor de fundo. essa cor sera aplicada se nao tiver outra configuracao pro mesmo item.*/
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-top: 8px; 
+}
+
+.artigos article a:hover{
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.artigos article h3{
+    font-size: 24px;
+}
+section h2{
+    font-size: 32px;
+}
+
+#esportes{
+    background-color: rgba(0,255,0,0.1);   
+}
+#esportes .artigos article a{
+    background-color:#009432
+}
+
+#economia {
+    background-color: #f7f397;
+}
+
+#economia a{ 
+    background-color: #ff9f1a;
+}
+
+#entretenimento {
+    background-color: rgb(163, 223, 203);
+}
+#entretenimento a{
+    background-color: rgb(77, 112, 100);
+}
+
+#tecnologia{
+    background-color: rgb(243, 197, 159);
+}
+#tecnologia a{
+    background-color: rgb(223, 115, 53);
+}
